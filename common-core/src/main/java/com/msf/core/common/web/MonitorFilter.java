@@ -1,6 +1,5 @@
 package com.msf.core.common.web;
 
-import com.msf.core.common.alarm.Alarmer;
 import com.msf.core.common.utils.JsonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,13 +20,7 @@ public class MonitorFilter implements Filter{
 
     private static final Logger logger = LoggerFactory.getLogger(MonitorFilter.class);
 
-    private boolean alarmed = false;
     private String[] pattern;
-
-    public MonitorFilter setAlarmed(boolean alarmed) {
-        this.alarmed = alarmed;
-        return this;
-    }
 
     public MonitorFilter setPattern(String pattern) {
         this.pattern = pattern.split(",");
@@ -36,6 +29,7 @@ public class MonitorFilter implements Filter{
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
+        logger.info("[monitor]-http接口调用统计启动.......");
     }
 
     @Override
@@ -53,9 +47,6 @@ public class MonitorFilter implements Filter{
         } catch (Throwable e) {
             long cost = System.currentTimeMillis() - start;
             logger.error("[monitor]-occur exception, uri={}, cost={}ms, args={}, remoteIP={}", resq.getRequestURI(), cost, JsonUtils.toJson(resq.getParameterMap()), ServletUtils.IP(resq), e);
-            if (alarmed) {
-                Alarmer.defaultAlarmer().send("[monitor]-occur exception, uri={}, cost={}ms, args={}, remoteIP={}", resq.getRequestURI(), cost, JsonUtils.toJson(resq.getParameterMap()), ServletUtils.IP(resq), e);
-            }
         }
         return;
     }
