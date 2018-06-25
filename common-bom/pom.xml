@@ -9,7 +9,7 @@
         <version>1.5.12.RELEASE</version>
     </parent>
 
-    <groupId>com.msf.core</groupId>
+    <groupId>com.util.msf</groupId>
     <artifactId>common-bom</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -35,8 +35,10 @@
         <netty.version>4.0.27.Final</netty.version>
         <orika.version>1.5.2</orika.version>
 
+        <lombok.version>1.16.20</lombok.version>
+
         <common-core.version>1.0.0-SNAPSHOT</common-core.version>
-        <common-log.version>1.0.0-SNAPSHOT</common-log.version>
+        <common-log.version>2.0.0-SNAPSHOT</common-log.version>
         <common-rpc.version>1.0.0-SNAPSHOT</common-rpc.version>
         <common-rpc-security.version>1.0.0-SNAPSHOT</common-rpc-security.version>
 
@@ -130,28 +132,35 @@
                 <version>${orika.version}</version>
             </dependency>
 
-            <!--mljr common start-->
+            <!--覆盖spring定义的版本1.6.22由于支持jdk9不兼容jdk8-->
             <dependency>
-                <groupId>com.mljr.msf</groupId>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <!-- common start-->
+            <dependency>
+                <groupId>com.util.msf</groupId>
                 <artifactId>common-core</artifactId>
                 <version>${common-core.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.mljr.msf</groupId>
-                <artifactId>common-log</artifactId>
+                <groupId>com.util.msf</groupId>
+                <artifactId>common-log-spring-boot-starter</artifactId>
                 <version>${common-log.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.mljr.msf</groupId>
+                <groupId>com.util.msf</groupId>
                 <artifactId>common-rpc</artifactId>
                 <version>${common-rpc.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.mljr.msf</groupId>
+                <groupId>com.util.msf</groupId>
                 <artifactId>common-rpc-security</artifactId>
                 <version>${common-rpc-security.version}</version>
             </dependency>
-            <!--mljr common end-->
+            <!-- common end-->
 
             <!--swagger start-->
             <dependency>
