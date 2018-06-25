@@ -13,7 +13,7 @@
     <description>服务通用核心组件</description>
 
     <parent>
-        <groupId>com.msf.core</groupId>
+        <groupId>com.util.msf</groupId>
         <artifactId>common-bom</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath/>
