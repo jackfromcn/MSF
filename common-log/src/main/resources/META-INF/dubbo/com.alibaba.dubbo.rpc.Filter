@@ -1,0 +1,2 @@
+traceDubboConsumerFilter=com.util.msf.log.filter.TraceDubboConsumerFilter
+traceDubboProviderFilter=com.util.msf.log.filter.TraceDubboProviderFilter

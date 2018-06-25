@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+File appender logback configuration provided for import, equivalent to the programmatic
+initialization performed by Boot
+-->
+
+<included>
+
+    <appender name="TraceAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator>
+                <expression>marker != null &amp;&amp; marker.contains("TRACE")</expression>
+            </evaluator>
+            <OnMismatch>DENY</OnMismatch>
+            <OnMatch>ACCEPT</OnMatch>
+        </filter>
+        <File>${LOG_HOME}/${TRACE_LOG}.log</File>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${COMMON_LOG_PATTERN}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/backup/${TRACE_LOG}.%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+</included>
