@@ -31,7 +31,7 @@ public class BackendWorker {
     }
 
     /**
-     * 初始化异步任务处理，默认核心线程5个，线程名称格式：mljr-worker-%d
+     * 初始化异步任务处理，默认核心线程5个，线程名称格式：util-worker-%d
      *
      * @param poolSize 最大线程数
      * @param capcity  工作队列的容量
@@ -41,7 +41,7 @@ public class BackendWorker {
     }
 
     /**
-     * 初始化异步任务处理，线程名称格式：mljr-worker-%d
+     * 初始化异步任务处理，线程名称格式：util-worker-%d
      *
      * @param coreSize 核心线程数
      * @param poolSize 最大线程数
@@ -52,7 +52,7 @@ public class BackendWorker {
     }
 
     /**
-     * 初始化异步任务处理，默认核心线程5个，线程名称格式：mljr-worker-%d
+     * 初始化异步任务处理，默认核心线程5个，线程名称格式：util-worker-%d
      *
      * @param poolSize  最大线程数，应当大于5
      * @param workQueue 工作队列
@@ -62,7 +62,7 @@ public class BackendWorker {
     }
 
     /**
-     * 初始化异步任务处理，线程名称格式：mljr-worker-%d
+     * 初始化异步任务处理，线程名称格式：util-worker-%d
      *
      * @param coreSize  核心线程数
      * @param poolSize  最大线程数
@@ -70,7 +70,7 @@ public class BackendWorker {
      */
     public static void init(int coreSize, int poolSize, BlockingQueue<Runnable> workQueue) {
         poolSize = Integer.max(coreSize, poolSize);
-        ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("mljr-worker-%d").build();
+        ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("util-worker-%d").build();
         threadPoolExecutor = new ThreadPoolExecutor(coreSize, poolSize, 10, TimeUnit.MINUTES, workQueue, threadFactory, new ThreadPoolExecutor.CallerRunsPolicy());
         logger.info("...............................初始化后台任务调度器，coreSize={}, maxSize={}", coreSize, poolSize);
     }
