@@ -1,4 +1,4 @@
-package com.msf.core.common.worker;
+package com.util.msf.core.worker;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import org.slf4j.Logger;

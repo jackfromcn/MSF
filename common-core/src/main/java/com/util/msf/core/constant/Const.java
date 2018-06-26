@@ -1,4 +1,4 @@
-package com.msf.core.common.constant;
+package com.util.msf.core.constant;
 
 import java.nio.charset.Charset;
 

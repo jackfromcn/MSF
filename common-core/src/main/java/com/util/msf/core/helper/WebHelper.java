@@ -1,6 +1,6 @@
-package com.msf.core.common.helper;
+package com.util.msf.core.helper;
 
-import com.msf.core.common.utils.M;
+import com.util.msf.core.utils.M;
 
 import java.util.Collections;
 import java.util.Map;

@@ -1,6 +1,6 @@
-package com.msf.core.common.math;
+package com.util.msf.core.math;
 
-import com.msf.core.common.utils.N;
+import com.util.msf.core.utils.N;
 
 import java.math.BigDecimal;
 

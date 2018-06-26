@@ -1,9 +1,9 @@
-package com.msf.core.common.web;
+package com.util.msf.core.web;
 
 import com.google.common.base.Splitter;
 import com.google.common.net.HttpHeaders;
-import com.msf.core.common.constant.Const;
-import com.msf.core.common.utils.N;
+import com.util.msf.core.constant.Const;
+import com.util.msf.core.utils.N;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

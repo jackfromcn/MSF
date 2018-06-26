@@ -1,4 +1,4 @@
-package com.msf.core.common.crypto;
+package com.util.msf.core.crypto;
 
 import javax.crypto.*;
 import javax.crypto.spec.DESKeySpec;

@@ -1,4 +1,4 @@
-package com.msf.core.common.utils;
+package com.util.msf.core.utils;
 
 import java.util.AbstractMap;
 import java.util.HashMap;

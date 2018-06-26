@@ -1,4 +1,4 @@
-package com.msf.core.common.convert;
+package com.util.msf.core.convert;
 
 import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.impl.DefaultMapperFactory;

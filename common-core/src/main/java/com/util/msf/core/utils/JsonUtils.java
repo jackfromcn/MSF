@@ -1,4 +1,4 @@
-package com.msf.core.common.utils;
+package com.util.msf.core.utils;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.type.TypeReference;

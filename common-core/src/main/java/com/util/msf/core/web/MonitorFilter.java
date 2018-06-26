@@ -1,6 +1,6 @@
-package com.msf.core.common.web;
+package com.util.msf.core.web;
 
-import com.msf.core.common.utils.JsonUtils;
+import com.util.msf.core.utils.JsonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.PatternMatchUtils;

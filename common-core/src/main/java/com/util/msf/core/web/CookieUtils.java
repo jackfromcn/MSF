@@ -1,4 +1,4 @@
-package com.msf.core.common.web;
+package com.util.msf.core.web;
 
 import org.apache.commons.lang3.Validate;
 

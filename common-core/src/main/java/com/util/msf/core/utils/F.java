@@ -1,6 +1,6 @@
-package com.msf.core.common.utils;
+package com.util.msf.core.utils;
 
-import com.msf.core.common.constant.Const;
+import com.util.msf.core.constant.Const;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.FastDateFormat;
 import org.slf4j.Logger;

@@ -1,4 +1,4 @@
-package com.msf.core.common.spring;
+package com.util.msf.core.spring;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

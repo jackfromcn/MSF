@@ -1,4 +1,4 @@
-package com.msf.core.common.crypto;
+package com.util.msf.core.crypto;
 
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
