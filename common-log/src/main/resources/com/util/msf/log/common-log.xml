@@ -8,11 +8,11 @@ initialization performed by Boot
 <included>
 
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
-    <include resource="com/mljr/msf/log/alarm/alarm-log.xml"/>
+    <include resource="com/util/msf/log/alarm/alarm-log.xml"/>
 
     <property name="COMMON_LOG_PATTERN" value="${COMMON_LOG_PATTERN:-%clr([%d{yyyy-MM-dd'T'HH:mm:ss.SSS+08:00}]){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr([%X{m_trace_uid:-},%X{m_trace_tid:-},%X{m_trace_scene:-}]){blue} %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40(%logger{39})){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
 
-    <!--<include resource="com/mljr/msf/log/trace/trace-log.xml"/>-->
+    <!--<include resource="com/util/msf/log/trace/trace-log.xml"/>-->
 
     <appender name="ConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>

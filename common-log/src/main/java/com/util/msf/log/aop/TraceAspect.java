@@ -42,7 +42,7 @@ public class TraceAspect {
         this.tracer = tracer;
     }
 
-    @Pointcut("@annotation(com.mljr.msf.log.annotation.MTrace)")
+    @Pointcut("@annotation(com.util.msf.log.annotation.MTrace)")
     public void tracePointCut() {
         logger.info("服务调用链路日志追溯切入");
     }

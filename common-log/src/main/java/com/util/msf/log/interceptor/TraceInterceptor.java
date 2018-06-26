@@ -1,6 +1,6 @@
 package com.util.msf.log.interceptor;
 
-import com.msf.core.common.helper.WebHelper;
+import com.util.msf.core.helper.WebHelper;
 import com.util.msf.log.constant.TraceKey;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
