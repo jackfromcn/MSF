@@ -22,7 +22,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.mljr.msf</groupId>
+            <groupId>com.util.msf</groupId>
             <artifactId>common-core</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>

@@ -1,7 +1,7 @@
 package com.msf.common.rpc.auth.interceptor;
 
-import com.mljr.msf.core.crypto.Cryptos;
-import com.mljr.msf.core.helper.WebHelper;
+import com.util.msf.core.crypto.Cryptos;
+import com.util.msf.core.helper.WebHelper;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.slf4j.Logger;
