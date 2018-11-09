@@ -1,0 +1,150 @@
+{"properties": [
+  {
+    "name": "mdiamond.enabled",
+    "type": "java.lang.Boolean",
+    "description": "启用配置中心mdiamond的自动配置.",
+    "defaultValue": true
+  },
+  {
+    "name": "mdiamond.serverHost",
+    "type": "java.lang.String",
+    "description": "配置中心mdiamond的host."
+  },
+  {
+    "name": "mdiamond.server-host",
+    "type": "java.lang.String",
+    "description": "配置中心mdiamond的host."
+  },
+  {
+    "name": "mdiamond.serverPort",
+    "type": "java.lang.Integer",
+    "description": "配置中心mdiamond的端口号."
+  },
+  {
+    "name": "mdiamond.server-port",
+    "type": "java.lang.Integer",
+    "description": "配置中心mdiamond的端口号."
+  },
+  {
+    "name": "mdiamond.groupId",
+    "type": "java.lang.String",
+    "description": "项目的groupId."
+  },
+  {
+    "name": "mdiamond.group-id",
+    "type": "java.lang.String",
+    "description": "项目的groupId."
+  },
+  {
+    "name": "mdiamond.artifactId",
+    "type": "java.lang.String",
+    "description": "项目的artifactId."
+  },
+  {
+    "name": "mdiamond.artifact-id",
+    "type": "java.lang.String",
+    "description": "项目的artifactId."
+  },
+  {
+    "name": "mdiamond.version",
+    "type": "java.lang.String",
+    "description": "项目的version."
+  },
+  {
+    "name": "mdiamond.profile",
+    "type": "java.lang.String",
+    "description": "项目的profile."
+  },
+  {
+    "name": "mdiamond.secretKey",
+    "type": "java.lang.String",
+    "description": "项目的secretKey."
+  },
+  {
+    "name": "mdiamond.secret-key",
+    "type": "java.lang.String",
+    "description": "项目的secretKey."
+  },
+  {
+    "name": "mdiamond.bPrintConfigWhenBoot",
+    "type": "java.lang.Boolean",
+    "description": "项目启动时，是否打印获取到的配置信息.",
+    "defaultValue": true
+  },
+  {
+    "name": "mdiamond.b-print-config-when-boot",
+    "type": "java.lang.Boolean",
+    "description": "项目启动时，是否打印获取到的配置信息.",
+    "defaultValue": true
+  },
+  {
+    "name": "mdiamond.bBackOffRetryInterval",
+    "type": "java.lang.Boolean",
+    "description": "失败时间间隔是否以指数退避的方式增加，当超过mdiamond.maxRetryIntervalSeconds时，失败重试的时间间隔设置为mdiamond.maxRetryIntervalSeconds.",
+    "defaultValue": true
+  },
+  {
+    "name": "mdiamond.b-back-off-retry-interval",
+    "type": "java.lang.Boolean",
+    "description": "失败时间间隔是否以指数退避的方式增加，当超过mdiamond.maxRetryIntervalSeconds时，失败重试的时间间隔设置为mdiamond.maxRetryIntervalSeconds.",
+    "defaultValue": true
+  },
+  {
+    "name": "mdiamond.maxRetryTimes",
+    "type": "java.lang.Integer",
+    "description": "失败重试的次数，默认值为Integer.MAX_VALUE."
+  },
+  {
+    "name": "mdiamond.max-retry-times",
+    "type": "java.lang.Integer",
+    "description": "失败重试的次数，默认值为Integer.MAX_VALUE."
+  },
+  {
+    "name": "mdiamond.retryIntervalSeconds",
+    "type": "java.lang.Integer",
+    "description": "失败重试的时间间隔，单位秒.",
+    "defaultValue": 5
+  },
+  {
+    "name": "mdiamond.retry-interval-seconds",
+    "type": "java.lang.Integer",
+    "description": "失败重试的时间间隔，单位秒.",
+    "defaultValue": 5
+  },
+  {
+    "name": "mdiamond.maxRetryIntervalSeconds",
+    "type": "java.lang.Integer",
+    "description": "最大的重试时间间隔，单位秒.",
+    "defaultValue": 120
+  },
+  {
+    "name": "mdiamond.max-retry-interval-seconds",
+    "type": "java.lang.Integer",
+    "description": "最大的重试时间间隔，单位秒.",
+    "defaultValue": 120
+  },
+  {
+    "name": "mdiamond.scanListener",
+    "type": "java.lang.Boolean",
+    "description": "是否扫描@AllKeyListener和@OneKeyListener注解.",
+    "defaultValue": false
+  },
+  {
+    "name": "mdiamond.scan-listener",
+    "type": "java.lang.Boolean",
+    "description": "是否扫描@AllKeyListener和@OneKeyListener注解.",
+    "defaultValue": false
+  },
+  {
+    "name": "mdiamond.scanMdiamond",
+    "type": "java.lang.Boolean",
+    "description": "是否扫描@MdiamondValue注解.",
+    "defaultValue": true
+  },
+  {
+    "name": "mdiamond.scan-mdiamond",
+    "type": "java.lang.Boolean",
+    "description": "是否扫描@MdiamondValue注解.",
+    "defaultValue": true
+  }
+]}

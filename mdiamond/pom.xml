@@ -8,6 +8,7 @@
         <module>mdiamond-util</module>
         <module>mdiamond-client</module>
         <module>mdiamond-server</module>
+        <module>mdiamond-spring-boot-autoconfigure</module>
     </modules>
 
     <parent>
