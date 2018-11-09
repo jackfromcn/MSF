@@ -39,8 +39,8 @@ public class MetricsMonitorAspect {
     /**
      * 返回码切点
      */
-    @Pointcut("execution(public com.util.msf.rpc.common.Result com.spring.cloud..controller..*.*(..))" +
-            " || execution(public com.util.msf.rpc.common.Result com.spring.cloud..facade..*.*(..))"
+    @Pointcut("execution(public com.util.msf.rpc.common.Result com.msf.spring.cloud..controller..*.*(..))" +
+            " || execution(public com.util.msf.rpc.common.Result com.msf.spring.cloud..facade..*.*(..))"
     )
     public void codePointCut() {
     }
@@ -48,15 +48,15 @@ public class MetricsMonitorAspect {
     /**
      * 通用切点
      */
-    @Pointcut("execution(public * com.spring.cloud..controller..*.*(..))" +
-            " || execution(public * com.spring.cloud..facade..*.*(..))" +
-            " || execution(public * com.spring.cloud..biz..*.*(..))" +
-            " || execution(public * com.spring.cloud..service..*.*(..))" +
-            " || execution(public * com.spring.cloud..schedule..*.*(..))" +
-            " || execution(public * com.spring.cloud..task..*.*(..))" +
-            " || execution(public * com.spring.cloud..client..*.*(..))" +
-            " || execution(public * com.spring.cloud..mapper..*.*(..))" +
-            " || execution(public * com.spring.cloud..dao..*.*(..))"
+    @Pointcut("execution(public * com.msf.spring.cloud..controller..*.*(..))" +
+            " || execution(public * com.msf.spring.cloud..facade..*.*(..))" +
+            " || execution(public * com.msf.spring.cloud..biz..*.*(..))" +
+            " || execution(public * com.msf.spring.cloud..service..*.*(..))" +
+            " || execution(public * com.msf.spring.cloud..schedule..*.*(..))" +
+            " || execution(public * com.msf.spring.cloud..task..*.*(..))" +
+            " || execution(public * com.msf.spring.cloud..client..*.*(..))" +
+            " || execution(public * com.msf.spring.cloud..mapper..*.*(..))" +
+            " || execution(public * com.msf.spring.cloud..dao..*.*(..))"
     )
     public void commonPointCut() {
     }

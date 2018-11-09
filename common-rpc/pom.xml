@@ -6,7 +6,8 @@
 
     <groupId>com.util.msf</groupId>
     <artifactId>common-rpc</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <name>common-rpc</name>
     <description>服务调用组件</description>

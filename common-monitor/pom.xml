@@ -6,7 +6,8 @@
 
     <groupId>com.util.msf</groupId>
     <artifactId>common-monitor</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <name>common-monitor</name>
     <description>服务监控组件</description>
@@ -77,7 +78,7 @@
         <dependency>
             <groupId>com.util.msf</groupId>
             <artifactId>common-rpc</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
