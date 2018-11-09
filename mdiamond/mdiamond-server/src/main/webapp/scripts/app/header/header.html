@@ -1,0 +1,23 @@
+<div id="header" class="row" ui-view="header">
+    <div>
+        <h1>
+            美利金融配置中心
+        </h1>
+    </div>
+    <div class="pull-right">
+
+      <span ng-hide="isLoggedIn()">
+          <a ui-sref="login">Login</a>
+      </span>
+
+        <span>{{ authenticateInfo.authc.principal }}</span>
+
+      <span ng-show="isLoggedIn()">
+        <!-- server-side route, not a client-side route -->
+        <a href="" ng-click="popUpdateUserPasswordModal(authenticateInfo.authc)">修改密码</a>
+        <span style="margin-left:20px;"></span>
+        <a href="" ng-click="logout()">Logout</a>
+      </span>
+    </div>
+
+</div>

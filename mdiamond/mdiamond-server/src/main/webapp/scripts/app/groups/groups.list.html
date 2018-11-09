@@ -1,0 +1,64 @@
+<button class="btn btn-default" ng-init="isAddFormCollapsed = true" ng-click="isAddFormCollapsed = !isAddFormCollapsed">
+    增加组
+</button>
+
+<form name="newGroupForm"
+      ng-submit="create()"
+      collapse="isAddFormCollapsed"
+      role="form">
+
+    <div class="form-group">
+        <label>name</label>
+        <input type="text"
+               ng-model="group.name"
+               class="form-control"
+               required="">
+    </div>
+
+    <div class="form-group">
+        <label>description</label>
+        <input type="text"
+               ng-model="group.description"
+               class="form-control"
+               required="">
+    </div>
+
+    <input type="submit"
+           class="btn btn-success"
+           ng-disabled="newGroupForm.$invalid">
+</form>
+
+<h3>Groups:</h3>
+<form role="form">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+            <input type="text" class="form-control" placeholder="Search" ng-model="search.$">
+        </div>
+    </div>
+</form>
+<table class="table table-striped">
+
+    <thead>
+    <tr>
+        <th>name</th>
+        <th>description</th>
+    </tr>
+    </thead>
+
+    <tr ng-repeat="group in groups | filter:search | orderBy:'name'">
+        <td>{{group.name}}</td>
+        <td>{{group.description}}</td>
+
+        <td>
+            <button class="btn btn-default" ng-click="popUpdateGroupModal(group)">修改
+            </button>
+        </td>
+        <td><a ui-sref="groups.users({groupId:group.id})">查看user</a></td>
+
+        <td>
+            <button class="btn btn-danger danger" ng-really-click="delete(group.id)">Delete</button>
+        </td>
+
+    </tr>
+</table>

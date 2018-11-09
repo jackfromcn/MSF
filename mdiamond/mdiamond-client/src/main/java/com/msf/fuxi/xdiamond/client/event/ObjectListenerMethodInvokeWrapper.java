@@ -19,7 +19,7 @@ public class ObjectListenerMethodInvokeWrapper extends MethodInvoker {
 
 	/**
 	 * Listener的class
-	 * name，目前只支持com.mljr.fuxi.xdiamond.client.event.OneKeyListener，io
+	 * name，目前只支持com.msf.fuxi.xdiamond.client.event.OneKeyListener，io
 	 * .github.xdiamond.client.event.AllKeyListener
 	 */
 	String listenerClassName;
