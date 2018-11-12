@@ -38,7 +38,7 @@
         <lombok.version>1.16.20</lombok.version>
 
         <common-core.version>1.0.0-SNAPSHOT</common-core.version>
-        <common-log.version>2.0.0-SNAPSHOT</common-log.version>
+        <common-log.version>1.0.0-SNAPSHOT</common-log.version>
         <common-rpc.version>1.0.0-SNAPSHOT</common-rpc.version>
         <common-rpc-security.version>1.0.0-SNAPSHOT</common-rpc-security.version>
 
