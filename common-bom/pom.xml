@@ -147,7 +147,7 @@
             </dependency>
             <dependency>
                 <groupId>com.util.msf</groupId>
-                <artifactId>common-log-spring-boot-starter</artifactId>
+                <artifactId>common-log</artifactId>
                 <version>${common-log.version}</version>
             </dependency>
             <dependency>
